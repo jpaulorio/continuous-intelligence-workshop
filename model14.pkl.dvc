@@ -1,0 +1,17 @@
+cmd: python src/decision_tree.py
+deps:
+- md5: cd93b6020c635fbc703d692a0d5c3b4a
+  path: data/splitter/train.csv
+- md5: c38869db7776de4a4298934196ce2991
+  path: data/splitter/validation.csv
+- md5: 42660e97fc72acbd15d7cbf0b4077501
+  path: src/decision_tree.py
+md5: 0782adb7199c6e655497ba9c098d28a5
+outs:
+- cache: true
+  md5: 77dea4d77a6eb3797c27490419f3087b
+  path: data/decision_tree/model14.pkl
+- cache: false
+  md5: a67a47f50ca3674c21561c30e6f42fb9
+  metric: true
+  path: results/score.txt
